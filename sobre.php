@@ -1,5 +1,5 @@
 <?php
-require_once './Pagina.class.php';
+require_once 'classes/Pagina.class.php';
 
 //criar uma instância da classe Página;
 $paginaSobre = new Pagina('Sobre nossa empresa');
