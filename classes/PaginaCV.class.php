@@ -15,14 +15,19 @@ class PaginaCV extends Pagina{
     public function renderizarConteudo(){
         echo '<h1>Currículo de '.$this->nome.'</h1>';
         echo '<p>E-mail: '.$this->email.'</p>';
+        echo '<hr>';
         echo '<h2>Experiência Proficcional</h2>';
         echo '<ul>';
-        echo '<li>'.$this->experiencia.'</li>';
+        foreach($this->experiencia as $item){
+            echo '<li>'.$item.'</li>';
+        }
         echo '</ul>';
-
+        echo '<hr>';
         echo '<h2>Educação</h2>';
         echo '<ul>';
-        echo '<li>'.$this->educacao.'</li>';
+        foreach($this->educacao as $item){
+            echo '<li>'.$item.'</li>';
+        }
         echo '</ul>';
         
     }
