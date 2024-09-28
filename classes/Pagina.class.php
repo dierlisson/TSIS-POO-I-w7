@@ -2,7 +2,7 @@
 // classes/Pagina.class.php
 class Pagina
 {
-    private $titulo;
+    protected $titulo; //mudou de private para protected para ser acessada por classe filha.
 
     public function __construct($titulo)
     {
